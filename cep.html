@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-CEP</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body id="body">
+    <header>
+        <div class="cabecalho1">
+            <img src="imagens/logo.png" alt="" id="logo">
+            <div class="anc1">
+                <a href="index.html">HOME</a>
+                <a href="cep.html">CEP</a>
+                <a href="dolar.html">DÓLAR</a>
+                <a href="formulario.html">FORMULÁRIO</a>
+                <a href="apiFake.html">API-FAKE</a>
+                <a href="clima.html">TEMPO</a>
+                <a href="apiFake2.html">API-FAKE 2</a>
+            </div>
+        </div>
+    </header>
+    <main class="cep">
+        <img src="imagens/cep.webp" id="imgCep" alt="">
+        <div id="consultaCep">
+            <h1 id="constCep">CONSULTA CEP</h1>
+            <div class="form">
+                <fieldset id="field">
+                    <p class="letras" id="leg">Endereço</p>
+                    
+                    <label for="cep" class="letras">CEP:</label>
+                    <input class="espaco" type="text" id="cep" autocomplete="off" id="campo">
+                    <br>
+                    <label for="rua" class="letras">Rua:</label>
+                    <input class="espaco" type="text" id="rua" readonly id="campo">
+                    <br>
+                    <label for="numero" class="letras">Número:</label>
+                    <input class="espaco" type="text" id="numero">
+                    <br>
+                    <label for="bairro" class="letras">Bairro:</label>
+                    <input class="espaco" type="text" id="bairro" readonly id="campo">
+                    <br>
+                    <label for="cidade" class="letras">Cidade:</label>
+                    <input class="espaco" type="text" id="cidade" readonly id="campo">
+                    <br>
+                    <label for="estado" class="letras">Estado:</label>
+                    <input class="espaco" type="text" id="estado" readonly id="campo">
+                    <br>
+                    <button id="botao">Consultar</button>
+                <br>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="rodape">
+            <img id="banner" src="imagens/logo.png">
+            <div class="link1">
+                <div>
+                    <h3>Páginas</h3>
+                </div>
+                <div>
+                    <a href="index.html" class="linkar">HOME</a>
+                </div>
+                <div>
+                    <a href="cep.html" class="linkar">CEP</a>
+                </div>
+                <div>
+                    <a href="dolar.html" class="linkar">DÓLAR</a>
+                </div> 
+                <div>
+                    <a href="formulario.html" class="linkar">FORMULÁRIO</a>
+                </div> 
+                <div>
+                    <a href="apiFake.html">API-FAKE</a>
+                </div>         
+                <div>
+                    <a href="clima.html">TEMPO</a>
+                </div>
+                <div>
+                    <a href="apiFake2.html">API-FAKE 2</a>
+                </div>                             
+            </div>
+            <div class="link2">
+                <div>
+                    <h3>Suporte</h3>
+                </div>
+                <div>
+                    <a href="#" class="linkar">FAQ</a>
+                </div>
+                <div>
+                    <a href="#" class="linkar">Telefones</a>
+                </div>
+                <div>
+                <a href="#" class="linkar">Chat</a>
+                </div>                  
+            </div>
+            <div id="redes">
+                <h3>Redes Sociais</h3>
+                <a href="#" class="anc"><img src="imagens/instagram.png"></a>
+                <a href="#" class="anc"><img src="imagens/twiter.png"></a>
+                <a href="#" class="anc"><img src="imagens/facebook.png"></a>
+            </div>
+        </div>
+        <div id="direitos">
+            <p>@2022 - direitos reservados a VMS CONSULTAS.</p>
+        </div>
+    </footer>
+</body>
+<script src="js/cep.js"></script>
+</html>

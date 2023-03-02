@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumindo API - DÓLAR</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body> 
+    
+    <header>
+        <div class="cabecalho1">
+            <img src="imagens/logo.png" alt="" id="logo">
+            <div class="anc1">
+                <a href="index.html">HOME</a>
+                <a href="cep.html">CEP</a>
+                <a href="dolar.html">DÓLAR</a>
+                <a href="formulario.html">FORMULÁRIO</a>
+                <a href="apiFake.html">API-FAKE</a>
+                <a href="clima.html">TEMPO</a>
+                <a href="apiFake2.html">API-FAKE 2</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="dolar">
+        <img src="imagens/Dólar.jpg" id="imgDolar" alt="">
+        <div id="consultaDolar">
+            <h1 id="constDolar">CONVERSOR <br> REAL PARA DÓLAR</h1>
+            <div class="formDolar">
+                <fieldset id="fieldDolar">
+                    <p class="letras" id="leg">CONVERTER</p>
+
+                    <label for="valor" class="letras">VALOR (R$)</label>
+                    <input class="espaco" type="text" id="real" autocomplete="off" data-real>
+                    <br>
+                    <label for="dolarr" class="letras">DÓLAR (US$)</label>
+                    <input class="espaco" type="text" id="dolar" readonly >
+                    <br>
+                    <label for="total" class="letras">TOTAL (US$)</label>
+                    <input class="espaco" type="text" id="total" readonly data-total>
+
+                    <br>
+                    <button id="botao" onclick="total()">Converter</button>
+                    <br>
+        </div>
+    </main>
+
+    <footer id="Rodape">
+        <div class="rodape">
+            <img id="banner" src="imagens/logo.png" width="200px">
+            <div class="link1">
+                <div>
+                    <h3>Páginas</h3>
+                </div>
+                <div>
+                    <a href="index.html" class="linkar">HOME</a>
+                </div>
+                <div>
+                    <a href="cep.html" class="linkar">CEP</a>
+                </div>
+                <div>
+                    <a href="dolar.html" class="linkar">DÓLAR</a>
+                </div> 
+                <div>
+                    <a href="formulario.html" class="linkar">FORMULÁRIO</a>
+                </div> 
+                <div>
+                    <a href="apiFake.html">API-FAKE</a>
+                </div>         
+                <div>
+                    <a href="clima.html">TEMPO</a>
+                </div>
+                <div>
+                    <a href="apiFake2.html">API-FAKE 2</a>
+                </div>
+            </div>
+            <div class="link2">
+                <div>
+                    <h3>Suporte</h3>
+                </div>
+                <div>
+                    <a href="#" class="linkar">FAQ</a>
+                </div>
+                <div>
+                    <a href="#" class="linkar">Telefones</a>
+                </div>
+                <div>
+                <a href="#" class="linkar">Chat</a>
+                </div>          
+            </div>
+            <div id="redes">
+                <h3>Redes Sociais</h3>
+                <a href="#" class="anc"><img src="imagens/instagram.png"></a>
+                <a href="#" class="anc"><img src="imagens/twiter.png"></a>
+                <a href="#" class="anc"><img src="imagens/facebook.png"></a>
+            </div>
+        </div>
+        <div id="direitos">
+            <p>@2022 - direitos reservados a VMS CONSULTAS.</p>
+        </div>
+    </footer>
+    <script src="js/dolar.js"></script>
+</body>
+</html>
