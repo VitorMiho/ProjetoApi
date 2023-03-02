@@ -1,0 +1,33 @@
+{
+    "rock":{
+    "name": "Nirvana",
+    "album": "Unplugged In New York",
+    "style": "Rock",
+    "price": "R$ 29,90",
+    "imagem": "<img src = 'imagens/acustico.jpg' width='303px' height='210px'>"
+    },
+
+    "samba":{
+    "name": "Alcione",
+    "album": "A voz do samba",
+    "style": "Samba",
+    "price": "R$ 14,90",
+    "imagem": "<img src = 'imagens/alcione.jpg' width='303px' height='210px'>"
+    },
+
+    "pop":{
+        "name": "Michael Jackson",
+        "album": "Thriller",
+        "style": "Pop",
+        "price": "R$ 999,90",
+        "imagem": "<img src = 'imagens/thiller.jpg' width='303px' height='210px'>"
+    },
+
+    "pagode":{
+        "name": "Zeca Pagodinho",
+        "album": "Uma prova de amor",
+        "style": "Pagode",
+        "price": "R$ 9,90",
+        "imagem": "<img src = 'imagens/zeca.jpg' width='303px' height='210px'>"
+    }
+}

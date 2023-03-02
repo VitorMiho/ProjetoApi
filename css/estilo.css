@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red;    */
+}
+body{
+    background-image: url(../imagens/imgApi.jpg);
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+h3{
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    text-decoration: none;  
+}
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 204, 255, 0.863);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}  
+a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* INICIO DO HEADER */
+.cabecalho1{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.815);
+    padding: 10px;
+}
+#logo{
+    width: 14.5%;
+    padding: 0;
+    justify-content: flex-start;
+    margin-left: 4%;
+}
+.anc1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 0%;
+    margin-top: 2.5%;
+    margin-left: 35%;
+    gap: 55px;
+}
+#menu{
+    display: none;
+}
+@media(max-width: 667px) {
+    #logo{ 
+        display: block;
+        margin: auto;
+        width: 75vw;        
+    }
+    .anc1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+/* FINAL DO HEADER */
+
+/* INICIO DO RODAPE */
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+    flex-wrap: wrap;
+    font-family: Poppins, sans-serif !important;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.815);
+    padding: 10px; 
+}
+.link1{
+    display: none;
+    /* display: flex;
+    flex-direction: column;
+    gap: 8px;  
+    color: white;   */
+}
+.link2{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: white;
+}
+.linkar{
+    text-decoration: none;
+    color: white;
+}
+.linkar:hover{
+    color: rgb(14, 188, 241);
+} 
+#redes{
+    display: block;
+    height: 0;
+}
+#banner{
+    width: 300px;
+}
+#direitos{
+    padding: 10px;
+    color: white;
+    background-color: gray;
+    text-align: center;
+    font-family: Poppins, sans-serif !important;
+}
+@media(max-width: 667px) {
+    #banner{ 
+        display: none;
+    }
+
+}
+/* FINAL DO RODAPE */
+
+/* INICIO DA PAGINA HOME */
+.texto{ 
+    background-color: rgba(7, 7, 7, 0.849);
+    margin:auto;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column; 
+    text-align: justify; 
+    max-width: 850px;
+    margin-bottom: 45px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding: 25px;
+}
+#subtexto{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    line-height: 20px;
+
+}
+.perg{
+    margin: auto;
+    color: rgb(132, 0, 255);
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.4em;
+}
+.paragrafo{
+    margin-bottom: 20px;
+    text-indent: 30px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 667px) {
+    .texto{ 
+        display: block;
+        margin: auto;
+        width: 75vw; 
+        margin-top: 5%;       
+    }
+    #Rodape{
+        margin-top: 40px;
+    }
+}
+/* FINAL DA PAGINA HOME */
+
+/* INICIO DA PAGINA CEP */
+.cep{
+    display: flex;
+    flex-direction: row;
+    /* background-color: white; */
+    background-image: linear-gradient(to left, #081f57, rgba(23, 21, 168, 0.494));
+}
+#imgCep{
+    width: 60%;
+    height: 33.7vw;
+
+}
+@media(max-width: 667px) {
+    #imgCep{ 
+        display: none;
+    }
+    .cep{
+        background-image: url(imagens/imgApi.jpg);
+    }
+    #constCep{
+        color: white;
+    }
+}
+#consultaCep{
+    margin: 20px auto;
+}
+#field{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.letras{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+#leg{
+    margin: 0 0;
+    margin-bottom: 8px;
+    font-size: 1.5em;
+    text-align: center;
+}
+.espaco{
+    height: 25px;
+    font-size: 1.0em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#botao{
+    margin: auto;
+    background-color: rgba(19, 173, 212, 0.768);
+    font-size: 1.2em;
+    height: 35px;
+    width: 110px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.628);
+    border-radius: 4px;
+}
+#botao:hover{
+    cursor: pointer;
+    background-color: rgba(0, 81, 255, 0.764);
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    transform: translate(3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, bordes 0.5s;    
+}
+/* FINAL DA PÁGINA CEP */
+
+/* INICIO PAGINA DOLAR */
+#imgDolar{
+    width: 59.5vw;
+    height: 33.7vw;
+}
+.dolar{
+    display: flex;
+    flex-direction: row;
+    /* background-color: white; */
+    background-image: linear-gradient(to left, #081f57, rgba(23, 21, 168, 0.494));
+}
+@media(max-width: 667px) {
+    #imgDolar{ 
+        display: none;
+    }
+    .dolar{
+        background-image: url(imagens/imgApi.jpg);
+        margin-top: 40px;
+    }
+    #constDolar{
+        color: white;
+    }
+}
+#consultaDolar{
+    margin: 20px auto;
+}
+#fieldDolar{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+#dolar{
+    color: black;
+}
+/* FINAL DO DOLAR */
+
+/* INICIO DO FORMULARIO */
+.formulario{
+    display: flex;
+    flex-direction: column;  
+    background-color: white; 
+    width: 650px; 
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.fieldo{
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width: 667px) {
+    .formulario{
+        width: 80vw;
+    }
+}
+#topico{
+    margin: auto;
+    margin-top: 15px;
+}
+.letras{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}   
+.espaco{
+    height: 25px;
+    font-size: 1.0em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#botaoo{
+    margin: auto;
+    margin-bottom: 15px;
+}
+.letras, .espaco{
+    margin-left: 7px;
+    margin-right: 10px;
+}
+#botao{
+    margin: auto;
+    background-color: rgba(19, 173, 212, 0.768);
+    font-size: 1.2em;
+    height: 35px;
+    width: 110px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.628);
+    border-radius: 4px;
+}
+#botao:hover{
+    cursor: pointer;
+    background-color: rgba(0, 81, 255, 0.764);
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    transform: translate(3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, bordes 0.5s;    
+}
+.print{
+    display: none;
+}
+@media print{
+    .letras{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+    }
+    .fieldo{
+        display: none;
+    }
+    .formulario{
+        display: none;
+    }
+    #botaoo{
+        display: none;
+    }
+    .cabecalho1{
+        display: none;
+    }
+    .rodape{
+        display: none;
+    }
+    #direitos{
+        display: none;
+    }
+    .print{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;      
+        gap: 15px;
+        margin: auto;        
+        margin-top: 15vw;
+        padding: 20px;
+        background-color:#837e7e21  !important; 
+        border-radius: 15px;
+    }
+    body{-webkit-print-color-adjust: exact;}
+}
+/* FINAL DO FORMULARIO */
+
+/* INICIO DO API FAKI */
+#texto{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+#caixa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border: 5px rgb(0, 0, 0) solid;
+    color: white;
+}
+#caixa:hover{
+    transform: translate(0px, -4px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, bordes 0.5s; 
+}
+.input{
+    width: 200px;
+    height: 70px;
+    border: 1px white solid;
+    border-radius: 20px;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    color: white;
+}
+.input:hover{
+    cursor: pointer;
+    background-color: rgb(0, 4, 255);
+    transform: translate(4px, -4px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, bordes 0.5s; 
+}
+#caixa2{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+#atualizar:hover{
+    background-color: rgba(10, 174, 224, 0.808);
+}
+#caixa1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 45px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.0em;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#img{
+    border-radius: 20px;
+    width: 550px; 
+    max-height: 300px;
+    
+}
+#main{
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+@media(max-width: 667px) {
+    #img{
+        width: 80vw;
+    }
+    #main{
+        background-color: black;
+        padding-bottom: 40px;
+    }
+    #texto{
+        text-align: center;
+        margin-top: 5px;
+        color: white;
+    }
+    #rod{
+        margin-top: 0px;
+    }
+}
+/*FINAL DO API FAKE */
+
+/* INICIO DO TEMPO */
+#imgTempo{
+    width: 60%;
+    height: 33.7vw;
+}   
+#Main{
+    display: flex;
+    flex-direction: row;
+}
+#consultaTempo{
+    background-image: linear-gradient(to left, #dfd7d7d7, rgba(201, 195, 195, 0.753));
+    width: 40vw;
+}
+#textoTempo{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+#pTempo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;   
+    background-color: white;
+    width: 300px;
+    margin: auto;     
+    margin-top: 40px;
+    border-radius: 10px;
+    height: 250px;
+}
+.letar{
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#parag{
+    margin-top: 7px;
+}
+#resposta{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 20px;
+    
+}   
+@media (max-width: 700px){
+    #imgTempo{ 
+        display: none;
+    }
+    #consultaTempo{
+        width: 80%;
+        height: 400px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }    
+    #pTempo{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    #textoTempo{
+        margin-top: 10px;
+    }
+    #resposta{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 1px;
+    }
+    #RodapE{
+        margin-top: 90px;
+    }
+}
+#bootao{
+    margin: auto;
+    background-color: rgba(19, 173, 212, 0.768);
+    font-size: 1.2em;
+    height: 35px;
+    width: 110px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.628);
+    border-radius: 4px;
+    margin-top: 1px;
+}
+/* FINAL DO TEMPO */
+
+/* INICIO API FAKE 2 */
+#h1{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+@media (max-width: 700px) {
+    #formulario{
+        margin-top: 30px;
+        gap: 35px;
+        margin-bottom: 30px;
+    }
+    #h1{
+        font-size: 2.1em;
+    }
+}
+.caixa{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 8px;
+    border-radius: 15px;
+}
+.caixa:hover{
+    cursor: pointer;
+    transform: translate(6px, -15px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, bordes 0.5s; 
+    font-style: black;
+}
+.classe{
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    text-align: center;
+}
+.botao{
+    background-color: aqua;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;    
+    width: 100px;
+    padding: 8px;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 55px;
+    margin-bottom: 0px;
+}
+#MaiN{
+    background-color: black;
+    padding-top: 39px;
+    padding-bottom: 80px;
+}
+
